@@ -6,10 +6,9 @@ APP_URL_SCHEME = Trio
 // DEVELOPER_TEAM will be set to your Apple Developer ID - typically using ConfigOverride.xcconfig
 DEVELOPER_TEAM = ##TEAM_ID##
 
-// Typically this is not modified unless you want to create a separate (unique) app using your ID
+// Stable main uses its own bundle identifier so it stays separate from dev in App Store Connect
 // It must include $(DEVELOPMENT_TEAM)
-// For example: myOwnApp.$(DEVELOPMENT_TEAM).trio
-BUNDLE_IDENTIFIER = org.nightscout.$(DEVELOPMENT_TEAM).trio
+BUNDLE_IDENTIFIER = org.nightscout.$(DEVELOPMENT_TEAM).trio.main
 
 // Danger zone - do not modify these unless you know what you are doing
 
